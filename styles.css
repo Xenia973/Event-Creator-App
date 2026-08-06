@@ -25,7 +25,7 @@ body {
 /**-Header&Navigation Bar--*/
 #main-header {
     text-align: center;
-    padding: 2.5rem;
+    padding-top: 1%;
     background-color: rgb(157, 182, 205);
 }
 
@@ -38,26 +38,26 @@ body {
 
 nav {
     background-color: rgb(198, 221, 221);
-    padding: 2rem;
+    padding: 2rem 0;
+    width: 100%;
 }
 
 nav ul {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 6rem;
 }
 
 nav ul li {
     list-style: none;
     text-decoration: underline;
+    width: 100vw;
 }
 
 /*main page and listings*/
 main .container .row{
-    border-radius: 12px;
-    border: 2px solid;
     text-align: center;
     display:flex;
     flex-direction: row;
@@ -65,9 +65,30 @@ main .container .row{
     flex-wrap: wrap;
     width: 100%;
     gap: 1rem;
-    
 }
 
+main .container .row .col .listing{
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .container .row .col .listing{
+    border-radius: 12p;
+    border: 2px solid;
+    border-color: blue;
+    padding-right:20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+main .container .row .col .listing:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 footer{
     padding: 1.5rem;
     background-color: rgb(157, 182, 205);
